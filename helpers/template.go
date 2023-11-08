@@ -10,7 +10,13 @@ import (
 )
 
 func GetTemplateFileName(name string) string {
-	return filepath.Join("templates", name+".tmpl")
+	path := filepath.Join("templates", name+".tmpl")
+	res, err := filepath.Abs(path)
+	if err != nil {
+		log.Fatalf("Error getting template file path: %v", err)
+	}
+
+	return res
 }
 
 func GenerateFileByTemplate(name string, outputFile *os.File) {

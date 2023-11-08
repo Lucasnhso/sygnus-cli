@@ -32,7 +32,7 @@ var generateCmd = &cobra.Command{
 			services.GenerateModuleFile("controller", name)
 		}
 
-		fmt.Println("generate called")
+		fmt.Println("Successfully generated")
 	},
 }
 
