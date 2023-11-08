@@ -1,0 +1,21 @@
+{
+  "name": "sygnus-cli",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "github.com/lucasnhso/sygnus-cli",
+  "author": "Lucas Oliveira",
+  "license": "MIT",
+  "bin": {
+    "sygnus": "./sygnus"
+  },
+  "files": [
+    "sygnus"
+  ],
+  "preferGlobal": true,
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "build": "go build -o sygnus"
+  }
+}
