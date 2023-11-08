@@ -37,7 +37,7 @@ func GenerateModuleFile(module, name string) {
 	}
 	defer outputFile.Close()
 
-	helpers.GenerateFileByTemplate(module, outputFile)
+	helpers.GenerateFileByTemplate(module, name, outputFile)
 
 	log.Printf("Generated %s file: %s", module, outputFileName)
 }
