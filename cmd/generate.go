@@ -8,8 +8,9 @@ import (
 )
 
 var generateCmd = &cobra.Command{
-	Use:   "generate",
-	Short: "Generate modules",
+	Use:     "generate",
+	Aliases: []string{"g"},
+	Short:   "Generate modules",
 
 	Args: func(cmd *cobra.Command, args []string) error {
 		if err := cobra.MinimumNArgs(2)(cmd, args); err != nil {
