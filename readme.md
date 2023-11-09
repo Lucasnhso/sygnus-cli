@@ -30,6 +30,12 @@ Generate modules:
 npx sygnus generate <module> <name>
 ```
 
+Or
+
+```sh
+npx sygnus g <module> <name>
+```
+
 For example:
 
 ```sh
