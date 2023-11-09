@@ -6,7 +6,7 @@
   </a>
 </p>
 
-> Cli to
+> Cli to generate sygnus modules
 
 ## Install
 
@@ -16,9 +16,9 @@ npm install sygnus-cli --save-dev
 
 ## 🚀 Usage
 
-Make sure you have [npx](https://www.npmjs.com/package/npx) installed (`npx` is shipped by default since npm `5.2.0`)
+Make sure you have [sygnus](https://github.com/Lucasnhso/sygnus) installed
 
-Just run the following command at the root of your project and answer questions:
+Just run the following command at the root of your project:
 
 ```sh
 npx sygnus
