@@ -5,17 +5,19 @@
   "repository": "github.com/lucasnhso/sygnus-cli",
   "author": "Lucas Oliveira",
   "license": "MIT",
-  "bin": {
-    "sygnus": "./sygnus"
-  },
   "files": [
-    "sygnus"
+    "bin",
+    "setBinPaths.js"
   ],
   "preferGlobal": true,
   "engines": {
     "node": ">=6.0.0"
   },
   "scripts": {
-    "build": "go build -o sygnus"
+    "build": "go build -o bin/sygnus && go build -o bin/sygnus.exe",
+    "postinstall": "node setBinPath.js"
+  },
+  "bin": {
+    "sygnus": "./bin/sygnus.exe"
   }
 }
